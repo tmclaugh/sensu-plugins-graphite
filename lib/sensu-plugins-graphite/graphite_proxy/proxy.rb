@@ -11,7 +11,7 @@ module SensuPluginsGraphite
       end
     end
 
-    class Proxy
+    class Proxy < Sensu::Plugin::Check::CLI
       attr_accessor :config
 
       def initialize(config)
